@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int height;
+    int width;
+    
+    cin>>height;
+    cin>>width;
+    
+    if(height == width) {
+        cout<<"It is a square";
+    }
+    else {
+        cout<<"It is a Rectangle";
+    }
+    return 0;
+}
