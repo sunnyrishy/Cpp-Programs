@@ -1,0 +1,41 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int x=2;
+    int y=5;
+    int z=0;
+    
+    if(x==2) {
+        cout<<"True"<<endl;
+    }
+    else {
+        cout<<"False"<<endl;
+    }
+    if (x!=5) {
+        cout<<"True"<<endl;
+    }
+    else {
+        cout<<"False"<<endl;
+    }
+    if(x != 5 && y >= 5) {
+        cout<<"True"<<endl;
+    }
+    else{
+        cout<<"False"<<endl;
+    }
+    if(z != 0 || x == 2){
+        cout<<"True"<<endl;
+    }
+    else{
+        cout<<"False"<<endl;
+    }
+    if(!(y < 10)){
+        cout<<"True"<<endl;
+    }
+    else {
+        cout<<"False"<<endl;
+    }
+}
