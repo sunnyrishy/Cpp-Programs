@@ -1,0 +1,16 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cin>>num;
+    
+    if(num>=0){
+        cout<<"Absolute Value is : "<<num;
+    }
+    else {
+        cout<<"Absolute Value is :"<<(num/-1);
+    }
+}
