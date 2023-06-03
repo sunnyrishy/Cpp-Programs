@@ -1,0 +1,19 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    char letter;
+    cout<<"Enter a Character : ";
+    cin>>letter;
+    
+    if(letter>='a' && letter<='z') {
+        cout<<"It is lowercase";
+    }
+    else {
+        cout<<"It is Uppercase";
+    }
+    return 0;
+    
+}
