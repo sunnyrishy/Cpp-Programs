@@ -1,0 +1,21 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int experience;
+    int salary;
+    cout<<"Enter Your Experience : ";
+    cin>>experience;
+    cout<<"Enter Your Salary : ";
+    cin>>salary;
+    
+    if(experience>5){
+        cout<<"Bonus Salary is : "<<salary + 0.05*salary;
+    }
+    else {
+        cout<<"Bonus Salary is :"<<salary;
+    }
+    return 0;
+}
