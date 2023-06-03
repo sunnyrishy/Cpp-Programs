@@ -1,0 +1,30 @@
+Problem Link : 
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int classes, attended;
+    cout << "Enter the number of classes held: ";
+    cin >> classes;
+    cout << "Enter the number of classes attended: ";
+    cin >> attended;
+
+    double percentage = (static_cast<double>(attended) / classes) * 100;
+
+    if (percentage >= 75.0) {
+        cout << "You are allowed to sit in the exam.";
+    } else {
+        cout<<"Any medical cause? Y/N";
+        char medical;
+        cin>>medical;
+        if(medical == 'Y'){
+            cout << "You are allowed to sit in the exam.";
+        }
+        else if(medical =='N') {
+        cout << "You are not allowed to sit in the exam.";
+        }
+    }
+
+    return 0;
+}
