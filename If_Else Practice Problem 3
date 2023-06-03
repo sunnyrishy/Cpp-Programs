@@ -1,0 +1,18 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int quantity;
+    cin>>quantity;
+    int unit = 100;
+    
+    int cost = unit*quantity;
+    cout<<"Total Price is : "<< cost<<endl;
+    if(cost>=1000){
+        int discount = cost - 0.1*cost;
+        cout<<"Effective Price is : "<<discount<<endl;
+    }
+    return 0;
+}
