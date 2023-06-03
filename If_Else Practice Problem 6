@@ -1,0 +1,35 @@
+Problem Link : https://www.codesdope.com/practice/cpp-decide-ifelse/
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int age1, age2, age3;
+    cout << "Enter Age1: ";
+    cin >> age1;
+    cout << "Enter Age2: ";
+    cin >> age2;
+    cout << "Enter Age3: ";
+    cin >> age3;
+
+    if (age1 > age2 && age1 > age3) {
+        cout << age1 << " is the oldest.";
+    }
+    else if (age2 > age1 && age2 > age3) {
+        cout << age2 << " is the oldest.";
+    }
+    else {
+        cout << age3 << " is the oldest.";
+    }
+
+    if (age1 < age2 && age1 < age3) {
+        cout << age1 << " is the youngest.";
+    }
+    else if (age2 < age1 && age2 < age3) {
+        cout << age2 << " is the youngest.";
+    }
+    else {
+        cout << age3 << " is the youngest.";
+    }
+    return 0;
+}
