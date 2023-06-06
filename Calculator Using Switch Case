@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    char oper;
+    int num1,num2;
+    cout<<"Enter Operator (+,-,*,/) :";
+    cin>>oper;
+    cout<<"Enter Two Numbers : "<<endl;
+    cin>>num1>>num2;
+    
+    switch(oper){
+        case '+' :
+        cout<<num1<<'+'<<num2<<" = "<<num1+num2;
+        break;
+        
+        case '-':
+        cout<<num1<<"-"<<num2<<" = "<<num1-num2;
+        break;
+        
+        case '*':
+        cout<<num1<<"*"<<num2<<" = "<<num1*num2;
+        break;
+        
+        case '/':
+        cout<<num1<<"/"<<num2<<" = "<<num1/num2;
+        break;
+        
+        default:
+        cout<<"Enter Proper Operator ! ";
+        break;
+        
+    }
+    return 0;
+    
+}
