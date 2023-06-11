@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[5];
+    cout<<"Enter 5 elements : ";
+    for(int i=0;i<sizeof(arr)/sizeof(arr[0]);i++) {
+        cin>>arr[i];
+    }
+
+    int maxelement = arr[0];
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for(int i =0;i<size;i++) {
+        if(arr[i]>maxelement) {
+            maxelement = arr[i];
+        }
+    }
+    cout<<"The Largest element is : "<<maxelement;
+}
