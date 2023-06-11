@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+float area(float h, float b) {
+    return h*b;
+}
+
+int main() {
+    int height,breadth;
+    cout<<"Enter height of rectangle : ";
+    cin>>height;
+    cout<<"Enter breadth of rectangle : ";
+    cin>>breadth;
+    
+    float rectanglearea = area(height,breadth);
+    cout<<"Area of rectangle is : " <<rectanglearea;
+    return 0;
+}
