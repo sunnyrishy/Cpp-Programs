@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int sqrt(int a) {
+    return a*a;
+}
+
+int main() {
+    int n;
+    cout<<"Enter a number : ";
+    cin>>n;
+    
+    int squareroot = sqrt(n);
+    cout<<"The Square Value of "<<n<<" is :"<<squareroot;
+    return 0;
+}
