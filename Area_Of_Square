@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+float area(float s) {
+    return s*s;
+}
+
+int main() {
+    float side;
+    cout<<"Enter side lenght : ";
+    cin>>side;
+    
+    float squarearea = area(side);
+    cout<<"Area of the square is : "<<squarearea;
+    return 0;
+    
+}
