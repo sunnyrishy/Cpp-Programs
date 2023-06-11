@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+float area(int r) {
+    return 3.14 * r;
+}
+
+int main() {
+    float radius;
+    cout<<"Enter Radius of Cirlce : ";
+    cin>>radius;
+    
+    float circlearea = area(radius);
+    cout<<"Area of the circle is : "<<circlearea;
+    return 0;
+    
+    
+}
