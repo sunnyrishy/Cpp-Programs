@@ -1,0 +1,89 @@
+Here is the implementation of Stack using Array and performing PUSH, POP, TOP, DISPLAY_STACK.
+
+#include<iostream>
+using namespace std;
+#define SIZE 5
+
+int top = -1;
+int A[SIZE];
+
+bool isempty() {
+    if(top == -1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void push(int value) {
+    if(top == SIZE-1) {
+        cout<<"Stack is Full, Can't Push !"<<endl;
+    }
+    else {
+        top++;
+        A[top] = value;
+    }
+}
+
+void pop() {
+    if(isempty()) {
+        cout<<"Stack is empty, Cant Pop !"<<endl;
+    }
+    else {
+        top--;
+    }
+}
+
+void show_top () {
+    if(isempty()) {
+        cout<<"Stack is empty !"<<endl;
+    }
+    else {
+        cout<<"Top Element is : "<<A[top]<<endl;
+    }
+}
+
+void displayStack() {
+    if(isempty()) {
+        cout<<"Stack is empty !"<<endl;
+    }
+    else {
+        for(int i =0;i<=top;i++) {
+            cout<<A[i]<<" ";
+            
+        }
+        cout<<endl;
+    }
+}
+
+int main() {
+    
+    int choice, flag = 1,value;
+    while( flag == 1){
+        cout<<"OPERATION : 1.PUSH, 2.POP, 3.SHOW_TOP, 4.DISPLAY_STACK, 5.EXIT"<<endl;
+        cin>>choice;
+    
+    switch(choice) {
+        case 1: cout<<"Enter Value : "<<endl;
+                cin>>value;
+                push(value);
+                break;
+        
+        case 2: pop();
+                break;
+                
+        case 3: show_top();
+                break;
+        
+        case 4: displayStack();
+                break;
+                
+        case 5: flag = 0;
+                break;
+    }
+        
+    }
+    return 0;
+    
+}
