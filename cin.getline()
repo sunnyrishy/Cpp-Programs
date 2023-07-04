@@ -1,0 +1,70 @@
+cin.getline accepts spaces while the user is giving the input.
+
+  #include<iostream>
+  using namespace std;
+
+int main() {
+  char name[100];
+  cout<<"Enter your name : ";
+  cin>>name;
+  cout<<"Your name is : "<<name<<endl;
+  return 0;
+}
+
+Output : 
+
+Enter your name : sunny rishy
+Your name is : sunny
+
+
+  ________ Using cin.getline()_________________
+
+#include<iostream>
+using namespace std;
+
+int main() {
+  char name[100];
+  cout<<"Enter your name : ";
+  //cin.getline(arrayname, size to be taken from the user, if any delimeter requires)         so it can take upto three arguements
+  cin.getline(name, 100);
+  cout<<"Your name is : "<<name<<endl;
+  return 0;
+}
+
+
+Output : 
+
+
+Enter your name : sunny rishy
+Your name is : sunny rishy
+
+
+
+
+
+Using delimeter here :::: 
+
+#include<iostream>
+using namespace std;
+
+int length(char input[]){
+    int count = 0;
+    for(int i=0; input[i] != '\0';i++){
+        count++;
+    }
+    return count;
+}
+
+int main() {
+    char name[100];
+    cout<<"Enter your name : ";
+    cin.getline(name, 100, 'y');
+    int name_length = length(name);
+    cout<<"Your name lenght is : "<<name_length<<endl;
+}
+
+
+Output : 
+
+Enter your name : sunny rishy
+Your name lenght is : 4
