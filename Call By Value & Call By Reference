@@ -1,0 +1,69 @@
+// Call By Value 
+
+The copies of the actual values are passed directly to the function .
+Any modifications to the values inside the function does not effect the original values .
+
+Example : 
+
+
+#include<iostream>
+using namespace std;
+
+void swapit(int a, int b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+int main(){
+    int x = 100;
+    int y = 200;
+    swapit(x,y);
+    cout<<"The value of x is : "<<x<<endl;
+    cout<<"The value of y is : "<<y<<endl;
+}
+
+
+Here x, y are called original parameters and a,b are called formal parameters.
+
+Output : 
+
+The value of x is : 100
+The value of y is : 200
+
+
+
+// Call By Reference 
+
+In this method, the address of the variable is passed to the function.
+
+Any change inside the function will be reflected back to the original variables.
+
+Example : 
+
+
+#include<iostream>
+using namespace std;
+
+void swapit(int &a, int &b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+int main(){
+    int x = 100;
+    int y = 200;
+    swapit(x,y);
+    cout<<"The value of x is : "<<x<<endl;
+    cout<<"The value of y is : "<<y<<endl;
+    
+}
+
+
+Output : 
+
+The value of x is : 200
+The value of y is : 100
